@@ -1,0 +1,401 @@
+/* Reset and Base Styles */
+•	{
+    Margin : 0;
+    Padding : 0;
+    Box-sizing : border-box;
+}
+
+Body {
+    Font-family : ‘Segoe UI’, Tahoma, Geneva, Verdana, sans-serif;
+    Line-height : 1.6;
+    Color : #333;
+    Background-color : #f5f5f5;
+}
+
+.container {
+    Max-width : 1200px;
+    Margin : 0 auto;
+    Padding : 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    Background-color : #2e7d32;
+    Color : white;
+    Padding : 1rem 0;
+    Position : sticky;
+    Top : 0;
+    z-index : 1000;
+}
+
+.navbar .container {
+    Display : flex;
+    Justify-content : space-between;
+    Align-items : center;
+}
+
+.logo {
+    Display : flex;
+    Align-items : center;
+    Gap : 10px;
+}
+
+.logo i {
+    Font-size : 2rem;
+}
+
+.nav-links {
+    Display : flex;
+    Align-items : center;
+    Gap : 2rem;
+}
+
+.nav-links a {
+    Color : white;
+    Text-decoration : none;
+    Font-weight : 500;
+    Transition : opacity 0.3s;
+}
+
+.nav-links a :hover {
+    Opacity : 0.8;
+}
+
+.btn-login {
+    Background-color : white;
+    Color : #2e7d32;
+    Border : none;
+    Padding : 0.5rem 1.5rem;
+    Border-radius : 5px;
+    Cursor : pointer;
+    Font-weight : 600;
+    Transition : all 0.3s;
+}
+
+.btn-login :hover {
+    Background-color : #f0f0f0;
+    Transform : translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    Padding : 4rem 0;
+    Background : linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+
+.hero .container {
+    Display : flex;
+    Align-items : center;
+    Gap : 3rem;
+}
+
+.hero-content {
+    Flex : 1;
+}
+
+.hero-content h2 {
+    Font-size : 2.5rem;
+    Color : #1b5e20;
+    Margin-bottom : 1rem;
+}
+
+.hero-content p {
+    Font-size : 1.1rem;
+    Color : #555;
+    Margin-bottom : 2rem;
+}
+
+.hero-image {
+    Flex : 1;
+}
+
+.hero-image img {
+    Width : 100%;
+    Border-radius : 10px;
+    Box-shadow : 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero-buttons {
+    Display : flex;
+    Gap : 1rem;
+}
+
+.btn-primary, .btn-secondary {
+    Padding : 0.8rem 2rem;
+    Border : none;
+    Border-radius : 5px;
+    Font-size : 1rem;
+    Font-weight : 600;
+    Cursor : pointer;
+    Transition : all 0.3s;
+}
+
+.btn-primary {
+    Background-color : #2e7d32;
+    Color : white;
+}
+
+.btn-primary :hover {
+    Background-color : #1b5e20;
+    Transform : translateY(-2px);
+    Box-shadow : 0 5px 15px rgba(46, 125, 50, 0.3);
+}
+
+.btn-secondary {
+    Background-color : white;
+    Color : #2e7d32;
+    Border : 2px solid #2e7d32;
+}
+
+.btn-secondary :hover {
+    Background-color : #f0f0f0;
+    Transform : translateY(-2px);
+}
+
+/* Dashboard Section */
+.dashboard {
+    Padding : 4rem 0;
+    Background-color : white;
+}
+
+.dashboard h2 {
+    Color : #1b5e20;
+    Margin-bottom : 2rem;
+    Display : flex;
+    Align-items : center;
+    Gap : 10px;
+}
+
+.dashboard-grid {
+    Display : grid;
+    Grid-template-columns : repeat(auto-fit, minmax(300px, 1fr));
+    Gap : 2rem;
+}
+
+.card {
+    Background : white;
+    Border-radius : 10px;
+    Padding : 1.5rem;
+    Box-shadow : 0 5px 15px rgba(0,0,0,0.1);
+    Border : 1px solid #e0e0e0;
+}
+
+.card h3 {
+    Color : #2e7d32;
+    Margin-bottom : 1.5rem;
+    Display : flex;
+    Align-items : center;
+    Gap : 10px;
+}
+
+.form-group {
+    Margin-bottom : 1rem;
+}
+
+.form-group label {
+    Display : block;
+    Margin-bottom : 0.5rem;
+    Font-weight : 600;
+    Color : #555;
+}
+
+.form-group input,
+.form-group select {
+    Width : 100%;
+    Padding : 0.8rem;
+    Border : 1px solid #ddd;
+    Border-radius : 5px;
+    Font-size : 1rem;
+}
+
+.weather-info {
+    Display : flex;
+    Gap : 1.5rem;
+    Align-items : center;
+    Margin-bottom : 1.5rem;
+}
+
+.weather-icon i {
+    Font-size : 3rem;
+    Color : #ff9800;
+}
+
+.weather-details h4 {
+    Color : #333;
+    Margin-bottom : 0.5rem;
+}
+
+.weather-details p {
+    Margin : 0.3rem 0;
+    Color : #666;
+}
+
+/* Market Section */
+.market {
+    Padding : 4rem 0;
+    Background-color : #f8f9fa;
+}
+
+.market h2 {
+    Color : #1b5e20;
+    Margin-bottom : 2rem;
+    Display : flex;
+    Align-items : center;
+    Gap : 10px;
+}
+
+.market-controls {
+    Display : flex;
+    Justify-content : space-between;
+    Align-items : center;
+    Margin-bottom : 2rem;
+}
+
+.market-controls select {
+    Padding : 0.8rem;
+    Border : 1px solid #ddd;
+    Border-radius : 5px;
+    Font-size : 1rem;
+}
+
+.price-table {
+    Overflow-x : auto;
+}
+
+Table {
+    Width : 100%;
+    Border-collapse : collapse;
+    Background : white;
+    Border-radius : 10px;
+    Overflow : hidden;
+    Box-shadow : 0 5px 15px rgba(0,0,0,0.1);
+}
+
+Thead {
+    Background-color : #2e7d32;
+    Color : white;
+}
+
+Th, td {
+    Padding : 1rem;
+    Text-align : left;
+    Border-bottom : 1px solid #eee;
+}
+
+Tbody tr :hover {
+    Background-color : #f5f5f5;
+}
+
+/* Modal */
+.modal {
+    Display : none;
+    Position : fixed;
+    Top : 0;
+    Left : 0;
+    Width : 100%;
+    Height : 100%;
+    Background-color : rgba(0,0,0,0.5);
+    z-index : 2000;
+}
+
+.modal-content {
+    Background-color : white;
+    Margin : 5% auto;
+    Padding : 2rem;
+    Border-radius : 10px;
+    Width : 90%;
+    Max-width : 500px;
+    Position : relative;
+}
+
+.close {
+    Position : absolute;
+    Top : 1rem;
+    Right : 1.5rem;
+    Font-size : 1.5rem;
+    Cursor : pointer;
+    Color : #666;
+}
+
+.user-type-selector {
+    Display : grid;
+    Grid-template-columns : repeat(4, 1fr);
+    Gap : 1rem;
+    Margin : 1.5rem 0;
+}
+
+.user-type {
+    Text-align : center;
+    Padding : 1rem;
+    Border : 2px solid #ddd;
+    Border-radius : 5px;
+    Cursor : pointer;
+    Transition : all 0.3s;
+}
+
+.user-type.active {
+    Border-color : #2e7d32;
+    Background-color : #e8f5e9;
+}
+
+.user-type i {
+    Font-size : 2rem;
+    Color : #2e7d32;
+    Margin-bottom : 0.5rem;
+}
+
+/* Footer */
+Footer {
+    Background-color : #333;
+    Color : white;
+    Padding : 3rem 0 1rem;
+}
+
+.footer-content {
+    Display : grid;
+    Grid-template-columns : repeat(auto-fit, minmax(250px, 1fr));
+    Gap : 2rem;
+    Margin-bottom : 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    Color : #4caf50;
+    Margin-bottom : 1rem;
+}
+
+.footer-section p {
+    Margin-bottom : 0.5rem;
+    Color : #bbb;
+}
+
+.footer-section i {
+    Margin-right : 10px;
+    Color : #4caf50;
+}
+
+.footer-bottom {
+    Text-align : center;
+    Padding-top : 2rem;
+    Border-top : 1px solid #444;
+    Color : #bbb;
+}
+
+/* Responsive Design */
+@media (max-width : 768px) {
+    .hero .container {
+        Flex-direction : column;
+    }
+    
+    .nav-links {
+        Display : none;
+    }
+    
+    .dashboard-grid {
+        Grid-template-columns : 1fr;
+    }
+    
+    .user-type-selector {
+        Grid-template-columns : repeat(2, 1fr);
+    }
+}
